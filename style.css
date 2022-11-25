@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a, h1, h2, h3, p{
+    text-transform: capitalize;
+    opacity: .7;
+    text-decoration: none;
+    color: aliceblue;
+}
+a, p{
+    font-size: 20px;
+}
+.widthfix{
+    max-width: 1100px;
+    margin: auto;
+    box-sizing: border-box;
+}
+/* main */
+.menu {
+    background: #000;
+}
+.menu ul {
+    text-align: center;
+}
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 30px 30px;
+    position: relative;
+}
+.menu ul li:hover > a{
+        color: rgb(244, 63, 63);
+    
+}
+
+/* drop1 */
+.menu ul li ul{
+    width: 200px;
+    border-radius: 5px;
+    position: absolute;
+    top: 101%;
+    left: -50%;
+    background: rgba(0, 0, 0, 0.751);
+    visibility: hidden;
+    opacity: 0;
+}
+.menu ul li ul li{   
+    padding: 15px 50px;
+    margin: 0;
+    border-radius: 2px;
+    display: block;
+    border-top: 1px solid#fff;
+}
+.menu ul li ul li a{
+    display: block;
+}
+.menu ul li:hover .drop1{
+    visibility: visible;
+    opacity: 1;
+}
+/* drop2 */
+.menu ul li ul li ul{
+    position: absolute;
+    z-index: 100;
+    top: -2%;
+    left: 101%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.drop2{
+    position: relative;
+}
+.drop2:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+/* conteiner */
+.conte{
+    background: url(./img/young-mens.jpg) center center  no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 700px;
+    width: 1260px;
+}
+.conte h1{
+    display: inline-block;
+    background: rgba(255, 4, 4, 0.537);
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 100px;
+    padding: 10px 40px;
+    border-radius: 4px;
+}
+.conte h3{
+    background: rgba(4, 146, 255, 0.537);
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 40px;
+    padding: 10px 0px;
+}
+.conte a{
+    padding: 15px 40px;
+    display: inline-block;
+    background: rgba(255, 0, 0, 0.598);
+    margin-top: 20px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+.conte a:hover{
+    background: rgb(255, 147, 5);
+}
+/* list */
+.list h1{
+    color: #000;
+    text-align: center;
+}
+.libd{
+    margin-top: 40px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+    padding: 80px 30px;
+}
+.libd li{
+    margin-top: 30px ;
+    list-style-position: outside;
+}
+.lib{
+    margin-top: 40px;
+    text-align: center;
+    box-shadow: 2px 2px 9px gray;
+    padding: 80px 30px;
+}
+.lib li{
+    margin-top: 30px ;
+    list-style-position: inside;
+}
+
+/* form */
+.form{
+    background: rgb(222, 222, 222);
+    margin-top: 40px;
+    padding: 40px 0px;
+    text-align: center;
+}
+form input{
+    width: 600px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid red;
+    outline: none;
+    padding-left: 30px;
+}
+form button{
+    padding: 12px 60px;
+    background: red;
+    margin-left: -5px;
+    border: none;
+    border-bottom: 1px solid red;
+    transition: 0.5s;
+}
+form button:hover{
+    background: rgb(192, 6, 6);
+}
+
+::placeholder{
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+/* typ */
+.bd{
+}
+.typ{
+    margin-top: 40px;
+    border: 2px dotted rgba(128, 128, 128, 0.523);
+}
+.typ h1{
+    color: #000;
+    padding: 30px 0px;
+    text-align: center;
+}
+.typ ul{
+    display: inline-block;
+    margin: 10px 92px 50px;
+}
+.typ ul li{
+    line-height: 30px;
+}
+.typ1 li{
+    list-style-type: lower-roman;
+    
+}
+.typ2 li{
+    list-style-type: square;
+}
+.typ3 li{
+    list-style-type: lower-greek;
+}
+
+/*  footer */
+
+.footer{
+    background: #000;
+    padding: 50px 0px;
+    text-align: center;
+
+}
+.footer ul li{
+    display: inline-block;
+    margin: 0px 10px;
+    margin-top: 40px;
+    background: rgb(0, 179, 255);
+    padding: 15px 15px;
+    border-radius: 50%;
+}
+.footer i{
+    color: rgb(254, 0, 0);
+}
+.footer span{
+    color: red;
+    text-decoration: underline;
+    margin-left: 15px;
+}
